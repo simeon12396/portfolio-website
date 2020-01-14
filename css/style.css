@@ -1,0 +1,273 @@
+@import './keyframes.css';
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+:root {
+    --primary-font-family: 'Montserrat', sans-serif;
+    --secondary-font-family: 'Roboto', sans-serif;
+    --secondary-color-text: rgb(133, 131, 131);
+}
+
+/* common styles start */
+h2 {
+    color: var(--secondary-color-text);
+    font-family: var(--primary-font-family);
+    font-weight: bold;
+}
+/* common styles end */
+
+/* header start */
+.header {
+    background-image: url('../images/header-back.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 85vh;
+}
+
+.header-overlay {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+    height: 85vh;
+}
+
+.header-container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.header-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+
+.header-li {
+    margin: 20px 20px 0px 0px;
+    list-style-type: none;
+    padding-bottom: 3px;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+    position: relative;
+}
+
+.header-hyperlink {
+    color: white;
+    font-family: var(--primary-font-family);
+    transition: all .1s linear;
+}
+
+.header-hyperlink::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    margin: 3px auto 0;
+    background: rgb(255, 255, 255, .5);
+    transition: width .2s linear;
+}
+
+.header-li:hover .header-hyperlink::after {
+    width: 100%;
+} 
+
+.header-li:hover {
+    cursor: pointer;
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+}
+
+.header-li:hover .header-hyperlink {
+    font-weight: 600;
+}
+
+.header-hyperlink:hover {
+    text-decoration: none;
+    color: white;
+}
+
+/* header end */
+
+/* typewriter start */
+
+    .typewriter {
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .typewriter-static-text,
+    .typewriter-typed-text {
+        color: white;
+        text-align: center;
+    }
+
+    .typewriter-static-text {
+        font-family: var(--secondary-font-family);
+    }
+
+    .typewriter-typed-text {
+        font-family: var(--primary-font-family);
+        font-weight: bold;
+        color: var(--secondary-color-text);
+    }
+
+/* typewriter end*/
+
+/* down arrow start */
+
+    .down-arrow {
+        font-size: 60px;
+        color: var(--secondary-color-text);
+        animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) infinite;
+    }
+
+    .down-arrow-hyperlink {
+        text-align: center;
+    }
+
+/* down arrow end */
+
+
+/* social media start */
+
+    .social-media {
+        position: fixed;
+        top: 200px;
+        left: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-media i {
+        color: white;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        transition: all .4s linear;
+        opacity: 0;
+        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation-delay: .3s;
+    }
+    
+    .social-media i:hover {
+        transform: scale(1.2) rotate(360deg);
+        cursor: pointer;
+    }
+
+    .social-media i:nth-of-type(1):hover {
+        color: #3b5998;
+    }
+
+    .social-media i:nth-of-type(2):hover {
+        color: #0e76a8;
+    }
+
+/* social media end */
+
+/* about me start */
+
+    .about-info h2:after {
+        content: "";
+        display: block;
+        width: 21%;
+        height: 2px;
+        margin: 10px 0;
+        background: rgb(75, 75, 75)
+    }
+
+    .about-info p {
+        font-family: var(--secondary-color-text);
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .about-img {
+        border-radius: 50%;
+    }
+    
+/* about me end */
+
+/* skills start */
+    #skills h2:after {
+        content: "";
+        display: block;
+        width: 3.5%;
+        height: 2px;
+        margin: 10px 0;
+        background: rgb(75, 75, 75)
+    }
+
+    #skills h6 {
+        text-transform: uppercase;
+        color: var(--secondary-color-text);
+        font-size: 20px;
+        font-weight: 400;
+        margin: 10px 0 30px;
+    }
+
+    #skills i {
+        margin-right: 10px;
+    }
+
+    #skills img {
+        margin-right: 30px;
+        margin-bottom: 30px;
+        height: auto;
+    }
+
+
+    .tools-list {
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+
+    .tools-list-item {
+        color: black;
+        font-family: var(--primary-font-family);
+        font-weight: lighter;
+        margin-bottom: 5px;
+        font-size: 18px;
+        list-style-type: square
+    }
+
+    #skills .tools-and-knowledge h6 {
+        margin-bottom: 0px;
+    }
+/* skills end */
+
+
+/* work start */
+    #work h2:after {
+        content: "";
+        display: block;
+        width: 14%;
+        height: 2px;
+        margin: 10px 0;
+        background: black;
+    }
+
+    #myTab {
+        justify-content: center;
+    }
+
+    #myTab a {
+        color: var(--secondary-color-text);
+        font-family: var(--secondary-font-family);
+        font-weight: 500;
+    }
+
+/* work end */
+
+
