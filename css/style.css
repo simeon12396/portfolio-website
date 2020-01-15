@@ -47,6 +47,9 @@ h2 {
 }
 
 .header-ul {
+    opacity: 0;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation-delay: .3s;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -140,7 +143,6 @@ h2 {
 
 /* down arrow end */
 
-
 /* social media start */
 
     .social-media {
@@ -176,6 +178,9 @@ h2 {
 
 /* social media end */
 
+main {
+    background: whitesmoke;
+}
 /* about me start */
 
     .about-info h2:after {
@@ -227,6 +232,17 @@ h2 {
         height: auto;
     }
 
+    #skills img:nth-of-type(4) {
+        width: 100px;
+        height: 100px;
+        align-self: center;
+    }
+
+    #skills img:nth-of-type(6) {
+        width: 100px;
+        height: 120px;
+        align-self: center;
+    }
 
     .tools-list {
         margin-top: 20px;
@@ -258,16 +274,79 @@ h2 {
         background: black;
     }
 
-    #myTab {
-        justify-content: center;
+    #work h5 {
+        font-family: var(--primary-font-family);
+        text-align: center;
+        margin: 20px 0;
+        font-size: 20;
+        letter-spacing: 1px;
+        width: 100%;
+    }
+    
+    .project-img {
+        width: 350px;
+        height: 200px;
+        min-width: auto;
     }
 
-    #myTab a {
-        color: var(--secondary-color-text);
+    .project-img-overlay {
+        background: rgba(0,0,0,0.8);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        -webkit-transition: all 0.4s ease-in-out 0s;
+        -moz-transition: all 0.4s ease-in-out 0s;
+        transition: all 0.4s ease-in-out 0s;
+        color: white;
+    }
+
+    .project-img-overlay button {
+        position: absolute;
+        bottom: 25%;
+        left: 0px;
+        opacity: 0;
+        border: 1px solid var(--secondary-color-text);
+        background-color: transparent;
+        color: white;
+        border-radius: 20px;
+        padding: 5px 10px;
+        transition: all .2s linear;
         font-family: var(--secondary-font-family);
-        font-weight: 500;
+    }
+    
+    .project-img-overlay button:hover {
+        background-color: var(--secondary-color-text);
+        border-radius: 5px;
+    }
+
+    .project-img-overlay h5 {
+        position: absolute;
+        top: 25%;
+        right: 0;
+        transition: all .2s linear;
+        font-family: var(--primary-font-family);
+    }
+
+    .project:hover .project-img-overlay h5 {
+        animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+
+    .project:hover .project-img-overlay {
+        opacity: 1;
+    }
+
+    .project:hover .project-img-overlay button {
+        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        left: 40%;
     }
 
 /* work end */
+
+
 
 
