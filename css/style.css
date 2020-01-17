@@ -17,6 +17,16 @@ html {
     --secondary-color-text: rgb(133, 131, 131);
 }
 
+/* progress bar start */
+.custom-progress-bar {
+    height: 4px;
+    position: fixed;
+    top: 0;
+    background: rgb(160, 159, 159);
+    z-index: 1000;
+}
+/* progress bar end */
+
 /* common styles start */
 h2 {
     color: var(--secondary-color-text);
@@ -234,9 +244,35 @@ h2 {
 
 /* social media end */
 
+/* back to top effect start */
+    .backToTopBtn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        opacity: 0;
+        background-color: transparent;
+        border: none;
+    }
+
+    .backToTopBtn i {
+        font-size: 35px;
+        color: rgb(160, 159, 159);
+    }
+
+    .js-appear-btn {
+        animation: roll-in-right 0.6s ease-out both;
+    }
+
+    .js-hide-btn {
+        animation: slit-out-vertical 0.5s ease-in both;
+    }
+
+/*back to top effect end */
+
 main {
     background: whitesmoke;
 }
+
 /* about me start */
 
     .about-info h2:after {
