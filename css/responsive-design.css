@@ -37,6 +37,10 @@
 }
 
 @media only screen and (max-width: 767px) {
+    .typewriter {
+        font-size: 2.5rem;
+    }
+
     .social-media {
         left: 10px
     }
@@ -48,7 +52,7 @@
     .development .row {
         justify-content: center;
     }
-    
+
     .project {
         display: flex;
         justify-content: center;
@@ -75,8 +79,24 @@
 }
 
 @media only screen and (max-width: 575px) {
+    .header-container {
+        padding: 0;
+    }
+
     .header {
         background-position-x: right;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .header-nav-mobile {
+        display: block;
     }
 
     .social-media {

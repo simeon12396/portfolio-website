@@ -102,6 +102,58 @@ h2 {
     color: white;
 }
 
+.btn-primary:not(:disabled):not(.disabled):active:focus,.btn-primary:hover {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.hamburger-menu {
+    font-size: 30px;
+    background-color: var(--secondary-color-text) !important;
+    border-color: var(--secondary-color-text);
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+    display: none;
+    justify-content: flex-end;
+    padding: 5px 10px 5px 0;
+}
+
+.header-nav-mobile {
+    display: none; 
+    position: absolute;
+    top: 40px; 
+    width: 100%;
+}
+
+.header-nav-mobile ul {
+    border-radius: 0;
+    padding: 0;
+    background-color: var(--secondary-color-text) !important;
+}
+
+.header-nav-mobile li {
+    margin-top: 10px;
+    transition: all .2s linear;
+}
+
+.header-nav-mobile li:hover {
+    background-color: white;
+}
+
+.header-nav-mobile li:hover a {
+    color: black;
+}
+
+.header-nav-mobile a {
+    color: white;
+    font-weight: 500;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-family: var(--secodnary-font-family);
+}
+
 /* header end */
 
 /* typewriter start */
