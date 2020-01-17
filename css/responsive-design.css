@@ -1,36 +1,30 @@
 @import './keyframes.css';
-
 @media only screen and (max-width: 1199px) {
     .social-media i {
         font-size: 2rem;
     }
-
     .project {
         margin-right: 20px;
     }
-
     .project img {
         margin-top: 10px;
     }
-
     .project-img-overlay {
         top: 10px;
     }
 }
+
 @media only screen and (max-width: 991px) {
     .social-media i {
         font-size: 1.5rem;
     }
-
     .typewriter {
         font-size: 3rem;
     }
-
     .tools-and-knowledge {
         flex-direction: row !important;
         justify-content: space-between;
     }
-
     .project {
         margin-right: 10px;
     }
@@ -40,38 +34,30 @@
     .typewriter {
         font-size: 2.5rem;
     }
-
     .social-media {
         left: 10px
     }
-
     .social-media i {
         margin-bottom: 10px;
     }
-
     .development .row {
         justify-content: center;
     }
-
     .project {
         display: flex;
         justify-content: center;
         min-width: 320px;
     }
-
     .project img {
         width: 320px;
     }
-
     .project-img-overlay {
         margin: 0 auto;
         width: 320px;
     }
-
     .modal-body img {
         width: 100%;
     }
-
     #about img {
         width: 300px;
         margin: 0 auto;
@@ -82,77 +68,59 @@
     .header-container {
         padding: 0;
     }
-
     .header {
         background-position-x: right;
     }
-
     .header-nav {
         display: none;
     }
-
     .hamburger-menu {
         display: flex;
     }
-
     .header-nav-mobile {
         display: block;
     }
-
     .social-media {
         display: none;
     }
-
     .social-media-mobile {
         display: block;
     }
-
     .social-media-mobile i {
         margin-right: 5px;
     }
-
     .social-media-mobile a {
         color: white;
     }
-
     .social-media {
         left: 10px
     }
-
     .typewriter {
         font-size: 2rem;
     }
-
     h2 {
         font-size: 27px;
     }
-
     .about-info p {
         font-size: 16px;
     }
-
     #skills h6 {
         font-size: 16px;
     }
-
     #skills .tools-and-knowledge h6 {
         margin-left: 10px;
     }
-
     #skills .tools-and-knowledge li {
         font-size: 15px;
     }
-
     #work h5 {
         font-size: 16px;
     }
-
     footer {
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
-
     footer p {
         font-size: 15px;
     }

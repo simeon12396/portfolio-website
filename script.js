@@ -7,9 +7,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const typing = () => {
 
-        if(wordCounter === text.length) {
+        if (wordCounter === text.length) {
             wordCounter = 0;
-        }; 
+        };
 
         currentLetter = text[wordCounter].charAt(indexOfLetter);
 
@@ -19,13 +19,13 @@ window.addEventListener('DOMContentLoaded', () => {
 
         indexOfLetter++;
 
-        if(indexOfLetter === text[wordCounter].length) {
+        if (indexOfLetter === text[wordCounter].length) {
             wordCounter++;
             indexOfLetter = 0;
             typingText = '';
         };
     };
-    
+
     setInterval(() => {
         typing();
     }, 200);
@@ -33,7 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const backToTopBtn = document.querySelector('.backToTopBtn');
 
     const checkYOffset = () => {
-        if(window.pageYOffset > 100) {
+        if (window.pageYOffset > 100) {
             backToTopBtn.style.opacity = 1;
             backToTopBtn.classList.remove('js-hide-btn')
             backToTopBtn.classList.add('js-appear-btn');
@@ -47,13 +47,13 @@ window.addEventListener('DOMContentLoaded', () => {
     const backToTop = () => {
         window.scrollTo(0, 0);
     };
-    
+
     window.addEventListener('scroll', checkYOffset);
     backToTopBtn.addEventListener('click', backToTop)
 
     const portfolioWrapper = document.querySelector('#portfolio-wrapper');
     const progressBar = document.querySelector('.custom-progress-bar');
-    
+
     const progressBarEffect = () => {
         let scrollValue = window.pageYOffset;
         let portfolioWrapperHeight = portfolioWrapper.clientHeight - window.innerHeight
@@ -65,4 +65,3 @@ window.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', progressBarEffect)
 });
-
