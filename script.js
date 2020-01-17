@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
-    const text = ['Simeon Ieroteev', 'a Front End Developer'];
+    const text = ["a Front End Developer  "];
     let wordCounter = 0;
     let indexOfLetter = 0;
     let currentLetter = '';
