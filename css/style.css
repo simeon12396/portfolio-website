@@ -176,6 +176,10 @@ h2 {
         color: #0e76a8;
     }
 
+    .social-media-mobile {
+        display: none;
+    }
+
 /* social media end */
 
 main {

@@ -1,3 +1,5 @@
+@import './keyframes.css';
+
 @media only screen and (max-width: 1199px) {
     .social-media i {
         font-size: 2rem;
@@ -43,6 +45,10 @@
         margin-bottom: 10px;
     }
 
+    .development .row {
+        justify-content: center;
+    }
+    
     .project {
         display: flex;
         justify-content: center;
@@ -71,6 +77,22 @@
 @media only screen and (max-width: 575px) {
     .header {
         background-position-x: right;
+    }
+
+    .social-media {
+        display: none;
+    }
+
+    .social-media-mobile {
+        display: block;
+    }
+
+    .social-media-mobile i {
+        margin-right: 5px;
+    }
+
+    .social-media-mobile a {
+        color: white;
     }
 
     .social-media {
@@ -103,6 +125,12 @@
 
     #work h5 {
         font-size: 16px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
 
     footer p {
