@@ -338,10 +338,18 @@ main {
     font-weight: 400;
 }
 
-.about-img {
-    border-radius: 50%;
-}
 
+.about-img-wrapper {
+    height: 400px;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-image: url('../images/profile_picture.jpg');
+    background-position-x: center;
+}
 
 /* about me end */
 
