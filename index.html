@@ -22,6 +22,7 @@
 
     <!-- Style.css -->
     <link rel="stylesheet" href="css/style.css">
+    
     <!-- Responsive-design.css -->
     <link rel="stylesheet" href="css/responsive-design.css">
 </head>
@@ -104,7 +105,7 @@
                                 Hello, I'm Simeon Valeriev Ieroteev, 24 years old. In March, 2019 I completed my bachelor’s degree in Computer Science.
                                 I'm young and ambitious Front-end Developer, focused and highly interested about JavaScript 
                                 and JavaScript frameworks such as React.js, Vue.js and Angular. 
-                                I have a passion for front end/web development and design. 
+                                I have a passion for front end, web development and design. 
                                 In this role a have 10 months experience.
                             </p>
                         </div>
@@ -132,7 +133,7 @@
 
                                 <img src="./images/js.png" alt="JavaScript" class="col-2">
 
-                                <img src="./images/sass.png" alt="SCSS" class="col-2">
+                                <img src="./images/sass.svg" alt="SCSS" class="col-2">
 
                                 <img src="./images/bootstrap.png" alt="Bootstrap 4" class="col-2">
 
@@ -143,13 +144,15 @@
                                 <img src="./images/vue.png" alt="Vue.js" class="col-2">
 
                                 <img src="./images/vuetify.svg" alt="Vuetify" class="col-2">
+
+                                <img src="./images/material-ui.svg" alt="Material UI" class="col-2">
                             </div>
                         </div>
 
                         <div class="tools-and-knowledge col-lg-3 row flex-column" data-aos="fade-left" data-aos-once="true">
                             <div class="knowledge-container">
                                 <h6 data-aos="fade-right" data-aos-once="true" >
-                                    <i class="fas fa-book-open"></i> knowledge
+                                    <i class="fas fa-book-open"></i> Other knowledge
                                 </h6>
 
                                 <ul class="tools-list" data-aos="fade-right" data-aos-once="true" >
@@ -157,11 +160,12 @@
                                     <li class="tools-list-item">OOP</li>
                                     <li class="tools-list-item">Flex and Grid system</li>
                                     <li class="tools-list-item">Animations and transitions</li>
-                                    <li class="tools-list-item">REST APIs</li>
+                                    <li class="tools-list-item">REST API</li>
                                     <li class="tools-list-item">Responsive design</li>
-                                    <li class="tools-list-item">Redux</li>
+                                    <li class="tools-list-item">Redux (with Thunk)</li>
                                     <li class="tools-list-item">Vuex</li>
                                     <li class="tools-list-item">Styled Components</li>
+                                    <li class="tools-list-item">BEM notation (standard) </li>
                                 </ul>
                             </div>
 
@@ -205,29 +209,47 @@
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5 class="modal-title" id="exampleModalLongTitle">Basic shopping cart</h5>
+                                            
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                      </button>
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
                                         </div>
 
                                         <div class="modal-body">
-                                            <img src="./images/shopping-cart.png" alt="Shopping cart">
+                                            <video width="100%" height="240" controls autoplay muted>
+                                                <source src="./videos/e-commerce-js.mp4" type="video/mp4">
+                                            </video>
 
-                                            <p>This is my project. Main responsibilities: add a product, remove a product and "purchase". The project is responsiveness.</p>
+                                            <p class="short-description">Short description:</p>
+
+                                            <p>
+                                                Basic shopping cart, where you can add a product, remove a product and "purchase" your products. 
+                                                This is not a real payment process. The site is responsiveness, for that I used flexbox.
+                                            </p>
+
+                                            <p class="tech-stack">Tech stack:</p>
+
+                                            <ul>
+                                                <li>Vanilla JavaScript</li>
+                                                <li>HTML5</li>
+                                                <li>SCSS</li>
+                                            </ul>
                                             
-                                            <p>Note: still in development.</p>
+                                            <p class="note">
+                                                <span>Note: </span> Still in development.
+                                            </p>
                                         </div>
 
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
                                             <button type="button" class="btn btn-primary">
-                                          <a href="https://happy-elion-f6cac1.netlify.com/nike.html" target="_blank">View site</a>
-                                      </button>
+                                                <a href="https://happy-elion-f6cac1.netlify.com/nike.html" target="_blank">View site</a>
+                                            </button>
 
                                             <button type="button" class="btn btn-primary">
-                                          <a href="https://github.com/simeon12396/shopping-cart" target="_blank">View code</a>
-                                      </button>
+                                                <a href="https://github.com/simeon12396/shopping-cart" target="_blank">View code</a>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -254,17 +276,25 @@
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5 class="modal-title" id="exampleModalLongTitle">News Website</h5>
+
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                      </button>
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
                                         </div>
 
                                         <div class="modal-body">
-                                            <img src="./images/news-website.png" alt="News website">
+                                            <video width="100%" height="240" controls autoplay muted>
+                                                <source src="./videos/first-react-app.mp4" type="video/mp4">
+                                            </video>
+                                            
+                                            <p class="short-description">Short description:</p>
 
-                                            <p>This is my first React.js project. The website was created using NewsAPI and React Bootstrap. We have three views - Home, Login and Register. In Home view we can see the latest news and read them. The second
-                                                view is Register where we can create account and after that we would want to login.
+                                            <p>
+                                                This is my first React.js project. The website was created using NewsAPI and React Bootstrap. We have three views - Home, Login and Register. In Home view we can see the latest news and read them. The second
+                                                view is Register where we can create account and after that we would want to login. The site is responsiveness.
                                             </p>
+
+                                            <p class="tech-stack">Tech stack: </p>
 
                                             <ul>
                                                 <li>React.js</li>
@@ -272,7 +302,6 @@
                                                 <li>React Hooks</li>
                                                 <li>React Router</li>
                                                 <li>SCSS</li>
-                                                <li>Responsive design</li>
                                             </ul>
                                         </div>
 
@@ -280,12 +309,8 @@
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
                                             <button type="button" class="btn btn-primary">
-                                          <a href="https://news-website.netlify.com/" target="_blank">View site</a>
-                                      </button>
-
-                                            <button type="button" class="btn btn-primary">
-                                          <a href="https://github.com/simeon12396/first-react-app" target="_blank">View code</a>
-                                      </button>
+                                                <a href="https://github.com/simeon12396/first-react-app" target="_blank">View code</a>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -308,17 +333,26 @@
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5 class="modal-title" id="exampleModalLongTitle">Movie Website</h5>
+
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                      </button>
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
                                         </div>
 
                                         <div class="modal-body">
                                             <img src="./images/movie-website.png" alt="Movie website">
 
-                                            <p>This is my second React.js project. The website was created using TheMovieDB API and React Bootstrap. The website have a lot of functionalities such as: different views, separated by API endpoints, opportunity
-                                                for create and login (with form validation), when the account is created, the user's can add/remove/read film or show to our favorites and etc. Every film or tv show contains real, actual information.
+                                            <p class="short-description">Short description:</p>
+
+                                            <p>
+                                                This is my second React.js project. The website was created using TheMovieDB API and React Bootstrap. 
+                                                The website has a lot of functionalities such as: different views, separated by API endpoints, opportunities
+                                                for create and login (with form validation), when the account is created, 
+                                                the user's can add/remove/read film or show to our favorite and etc. 
+                                                Every film or tv show contains real, actual information. The site is responsiveness.
                                             </p>
+                                           
+                                            <p class="tech-stack">Tech stack:</p>
 
                                             <ul>
                                                 <li>React.js</li>
@@ -328,7 +362,6 @@
                                                 <li>React Hook Form</li>
                                                 <li>Context API</li>
                                                 <li>SCSS</li>
-                                                <li>Responsive design</li>
                                             </ul>
                                         </div>
 
@@ -360,13 +393,25 @@
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5 class="modal-title" id="exampleModalLongTitle">E-commerce react.js</h5>
+
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                      </button>
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
                                         </div>
 
                                         <div class="modal-body">
-                                            <img src="./images/e-commerce-react.png" alt="E-commerce react.js">
+                                            <video width="100%" height="240" controls autoplay muted>
+                                                <source src="./videos/e-commerce-react.mp4" type="video/mp4">
+                                            </video>
+
+                                            <p class="short-description">Short description: </p>
+                                            
+                                            <p>
+                                                This is a simple e-commerce website, where the user can add a product, 
+                                                remove a product and change the quantity of the selected product in your shopping cart.
+                                                Each product has a personal page with own specifications.
+                                                The filters are not ready yet, because I have freezed the project for awhile.
+                                            </p>
 
                                             <p class="note">
                                                 <span>Note: </span> Still in development.
@@ -379,7 +424,6 @@
                                                 <li>React Router</li>
                                                 <li>Context API</li>
                                                 <li>Styled Components</li>
-                                                <li>Responsive design</li>
                                             </ul>
                                         </div>
 
@@ -416,16 +460,24 @@
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5 class="modal-title" id="exampleModalLongTitle">E-commerce Website</h5>
+
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
+                                                <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
 
                                         <div class="modal-body">
                                             <img src="./images/e-commerce.png" alt="E-commerce Website">
 
-                                            <p>The e-commerce website was created by Vue.js, Vuex and Vuetify. Main functionalities: supported administrator account who can management site information, filtering products, login and register, add/remove to
-                                                favorite and etc</p>
+                                            <p class="short-description">Short description:</p>
+                                            <p>
+                                                The e-commerce website was created by Vue.js, Vuex and Vuetify. 
+                                                Main functionalities: supported administrator account who can manage site information (add, update and remove posts), 
+                                                filtering products, login and register, add/remove to
+                                                favorite and etc. The site is responsiveness.
+                                            </p>
+
+                                            <p class="tech-stack">Tech stack:</p>
 
                                             <ul>
                                                 <li>Vue.js</li>
@@ -462,7 +514,7 @@
         </main>
 
         <footer>
-            <p> 2020 All rights reserved.</p>
+            <p> &#169; Copyright. 2020 All rights reserved.</p>
 
             <section class="social-media-mobile">
                 <a href="https://www.facebook.com/simeon.valeriev" target="_blank">

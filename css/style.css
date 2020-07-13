@@ -27,7 +27,6 @@ html {
     z-index: 1000;
 }
 
-
 /* progress bar end */
 
 
@@ -39,9 +38,15 @@ h2 {
     font-weight: bold;
 }
 
+.short-description,
+.note span,
+.tech-stack {
+    font: 1rem var(--primary-font-family);
+    font-weight: bold;
+    color: var(--secondary-color-text);
+}
 
 /* common styles end */
-
 
 /* header start */
 
@@ -233,7 +238,6 @@ h2 {
     text-align: center;
 }
 
-
 /* down arrow end */
 
 
@@ -319,7 +323,6 @@ h2 {
 main {
     background: whitesmoke;
 }
-
 
 /* about me start */
 
@@ -549,7 +552,7 @@ main {
 /* footer start */
 
 footer {
-    background-color: black;
+    background: linear-gradient(to right, black, var(--secondary-color-text));
     color: white;
     display: -webkit-box;
     display: -ms-flexbox;
